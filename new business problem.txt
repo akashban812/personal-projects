@@ -1,0 +1,22 @@
+Technical Assessment
+Attached is a dataset containing store sales from Corporación Favorita, a large Ecuadorian-based grocery retailer. The goal of this exercise is to develop an analytical process to detect any persistent anomaly trends in store sales across the stores in the dataset. The dataset contains over 50 stores with sales from 2013 to 2017.
+The detected anomalies would have the following properties:
+•	They should detect anomalous trends that last for at least 3 consecutive time periods
+•	The deviations should be extreme in relation to both the stores own sales patterns as well as sales patterns of comparable stores.
+
+Here is the data dictionary for the dataset.
+•	Date
+•	store_nbr – Store ID
+•	Sales – Sales $
+•	promotion_count - # of promotions on that date
+•	store_info – Dictionary of store information
+o	Store metadata, including city, state, type, and cluster.
+o	cluster is a grouping of similar stores.
+•	holiday_info – Array of Holiday and Events, with meta data
+o	NOTE: Pay special attention to the transferred column. A holiday that is transferred officially falls on that calendar day, but was moved to another date by the government. A transferred day is more like a normal day than a holiday. To find the day that it was actually celebrated, look for the corresponding row where type is Transfer. For example, the holiday Independencia de Guayaquil was transferred from 2012-10-09 to 2012-10-12, which means it was celebrated on 2012-10-12. Days that are type Bridge are extra days that are added to a holiday (e.g., to extend the break across a long weekend). These are frequently made up by the type Work Day which is a day not normally scheduled for work (e.g., Saturday) that is meant to payback the Bridge.
+o	Additional holidays are days added a regular calendar holiday, for example, as typically happens around Christmas (making Christmas Eve a holiday).
+Submission:
+•	Please submit your code and results
+•	Please create a deck and be prepared to present it to the team (I’ll schedule this once it’s complete
+)
+Reference: https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data (Data has been aggregated to the store level)
